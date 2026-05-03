@@ -24,6 +24,28 @@ Most Git tutorials teach you `git rebase -i`. This one teaches you what a commit
 
 Once these click, rebase, conflicts, detached HEAD, and "oh no I lost my work" stop being scary.
 
+## What people said after the workshop
+
+We ran this with a mixed group of junior and senior engineers. The reactions:
+
+> *"I had no idea trees even existed. I thought the only tree in Git was the tree of commits."*
+
+> *"We thought commits were diffs that get applied on top of each other, event-sourcing style. We didn't know each commit actually holds a full snapshot — and that the blob can be that large."*
+
+> *"Wait, so does Git have a GC then?"* (yes — `git gc`)
+
+> *"I didn't even know reflog existed. You can come back from a rebase?"*
+
+> *"I knew there was a `.git` folder, but I had no idea you could just open it up and read everything with `git cat-file`."*
+
+> *"Oh — so you can run `git diff` against the staging area too?"*
+
+> *"Now I get why I couldn't switch branches with a staged file. It either has to be committed or stashed."*
+
+> *"I've been through tons of workshops and KodeKloud-style videos, but I never learned it like this. The pace — one step at a time, instead of a video that just plays past you — is what made it click."*
+
+What's striking is that **seniors and juniors got stuck on the same things**. Years of using Git daily doesn't build the mental model — you have to go look.
+
 ## The four sessions
 
 1. **Mental model** — objects, refs, HEAD, the three states (working dir / staging / committed)
@@ -81,6 +103,23 @@ That's the whole model. Commit → tree → blobs. Branches are pointers to comm
 4. When you finish a session, move to the next one.
 
 You'll need a terminal with `git` installed. The first session creates a small playground repo for you to break and fix.
+
+## FAQ
+
+**I've used Git daily for years. Is this for me?**
+Probably yes. The workshop ran with senior engineers (8+ years) alongside juniors, and they got stuck on the same things. Daily use builds command memory, not a mental model.
+
+**Why Socratic instead of just reading the docs?**
+Because reading is passive. You can read "a commit is a snapshot" ten times and not internalize it. The moment you `cat-file` your own commit and see the tree pointer with your own eyes, it clicks. The questions force you to predict before you peek — which is where actual learning happens.
+
+**Do I need to pay for Claude?**
+No. The session files are plain Markdown prompts — they work with any capable LLM (Claude, ChatGPT, local models that follow instructions well). Claude is just what we tested with.
+
+**How long does it take?**
+Each session is 30–45 minutes if you actually engage with the questions. The first session (mental model) is the most important — don't skip it even if you "already know" Git.
+
+**Can I run this as a workshop for my team?**
+Yes — that's how it was tested. A 40-minute slot covers sessions 1 and 2 comfortably. See [`workshop-cheatsheet.md`](workshop-cheatsheet.md) for a presenter's reference.
 
 ## Contributing
 
