@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/git-with-claude.jpg" width="200" alt="git-with-claude logo" />
+</p>
+
 # git-with-claude
 
 Learn Git step by step — not by memorizing commands, but by building the mental model behind them. An AI mentor (Claude) walks you through it Socratically, one question at a time.
