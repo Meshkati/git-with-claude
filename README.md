@@ -2,8 +2,6 @@
 
 Learn Git step by step — not by memorizing commands, but by building the mental model behind them. An AI mentor (Claude) walks you through it Socratically, one question at a time.
 
-> The sessions are written in conversational Persian (فارسی محاوره‌ای), but the Git concepts are universal. If you read Persian, you're set. If not, the prompts are easy to translate or adapt.
-
 ## The approach
 
 Inspired by Karpathy-style "build it from scratch to understand it" teaching, plus the Socratic method.
